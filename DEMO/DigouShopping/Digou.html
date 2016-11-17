@@ -1,0 +1,177 @@
+<!-- 加大了5下字体 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>地狗购物网-网页定位导航特效</title>
+    <style>
+      *{margin: 0;padding: 0}
+      body{
+        font-size: 14px;
+      }
+      .content{
+        width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        /*border: 1px solid black;*/
+      }
+      .content h1{
+        color: #0688BB;
+        margin-bottom: 10px;
+      }
+      .content h2{
+        margin-bottom: 20px;
+        border-bottom: 1px solid #0688BB;
+      }
+      /*.content ul{
+
+      }*/
+      .content ul li{
+        display: inline;
+      }
+      .content ul li a img{
+        width: 230px;
+        height: 230px;
+        padding: 5px;
+      }
+      .floor{
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px dotted #0088bb;
+      }
+      #menu{
+        position: fixed;
+        top: 200px;
+        left: 50%;
+        margin-left: 400px;
+      }
+      #menu ul{list-style: none;}
+      #menu li a{
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        text-align: center;
+      }
+      #menu ul li a:hover,
+      #menu ul li a.current{
+        color: #fff;
+        background: #0088bb;
+      }
+    </style>
+    <script src="jquery-3.1.1.js"></script>
+    <script>
+      //首先，思路是滚动条距离顶部的距离 与 每层到顶部的距离进行比较
+      $(document).ready(function(){
+        $(document).scroll(function(){
+          var top = $(document).scrollTop();
+          var currentId = "";
+          $(".floor").each(function(){
+            var floorTop = $(this).offset().top;
+            if (top>floorTop-200) {
+              currentId="#"+$(this).attr("id");
+            } else {
+              return false;
+            }
+          });
+
+          if(currentId && $(".current").attr("href") != currentId){
+            $(".current").removeClass("current");
+            // $("[href=currentId]").addClass("current"); 错误的，不知道为什么
+            $("#menu").find("[href='"+currentId+"']" ).addClass("current");
+            //注意：不知道是不是jquery版本的问题，老师演示是正确的，但是新版的库有问题。menu.find("[href="+currentId + "]")此处中变量为字符串拼接时，应当为menu.find("[href='"+currentId+"']" ),"+currentId+"为变量拼接，单引号将变量转换为字符串。
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li><a href="#1F" class="current">1F 男装</a></li>
+        <li><a href="#2F">2F 女装</a></li>
+        <li><a href="#3F">3F 数码</a></li>
+        <li><a href="#4F">4F 母婴</a></li>
+        <li><a href="#5F">5F 零食</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>地狗购物网</h1>
+      <div id="1F" class="floor">
+        <h2>1F 男装</h2>
+        <ul>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+          <li><a href="#"><img src="1.jpg"></a></li>
+        </ul>
+      </div>
+      <div id="2F" class="floor">
+        <h2>1F 女装</h2>
+        <ul>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+          <li><a href="#"><img src="2.jpg"></a></li>
+        </ul>
+      </div>
+      <div id="3F" class="floor">
+        <h2>1F 数码</h2>
+        <ul>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+          <li><a href="#"><img src="3.jpg"></a></li>
+        </ul>
+      </div>
+      <div id="4F" class="floor">
+        <h2>4F 母4</h2>
+        <ul>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+          <li><a href="#"><img src="4.jpg"></a></li>
+        </ul>
+      </div>
+      <div id="5F" class="floor">
+        <h2>5F 零食</h2>
+        <ul>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+          <li><a href="#"><img src="5.jpg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
