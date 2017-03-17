@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #DEDEDE;
+	font-size: 16px;
+}
+#top {
+	height: 60px;
+	background-color: #333333;
+}
+#top h1{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	margin: 0;
+	margin-left: 40px;
+}
+#top ul{
+	float: right;
+}
+#top ul li{
+	/*display: inline-block;*/
+	float: left;
+	margin-right: 25px;
+}
+#top ul li a{
+	color: #FFFFFF;
+}
+
+/*文章第一段*/
+.paragraph {
+	background-color: #FFFFFF;
+	margin: 20px;
+	padding: 20px;
+}
+.paragraph p {
+	text-indent: 2em;
+}
+
+/*图片段落*/
+.photos {
+	background-color: #FFFFFF;
+	margin: 20px;
+	padding: 20px;
+}
+.photos ul {
+	list-style: none;
+}
+.photos ul li {
+	border: 1px solid #CCCCCC;
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.photos ul li p{
+	text-align: center;
+	margin-top: 0px;
+
+}
+
+/*最后一段*/
+table {
+	width: 100%;
+	margin: 0 auto;
+}
+table tr:first-child {
+	text-align: left;
+	background-color: #333333;
+}
+table tr:last-child {
+	background-color: #CCCCCC;
+}
+
+/*侧边栏*/
+#side {
+	background-color: #FFFFFF;
+	margin: 20px;
+	padding: 20px;
+	height: 500px;
+}
+#side .left {
+	float: left;
+	width: 40%;
+}
+#side .right {
+	float: right;
+	width: 60%;
+	margin-top: 15px;
+}
+#side .left p {
+	text-align: right;
+}
+#side .right p{
+	color: #969E9B;
+	font-size: 14px;
+}
+.password1 {
+	margin-top: 7px;
+	margin-bottom: 15px;
+}
+#gender {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+#hobby {
+	margin-top: 15px;
+	margin-bottom: 17px;
+}
+.submit {
+	background-color: #3355D0;
+	width: 100%;
+	height: 40px;
+	color: #FFFFFF;
+	border-radius: 10px;
+	border: none;
+	margin-top: 20px;
+
+}
+#footer {
+	height: 70px;
+	line-height: 70px;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 14px;
+}
