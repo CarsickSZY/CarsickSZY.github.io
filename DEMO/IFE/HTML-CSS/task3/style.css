@@ -1,0 +1,47 @@
+.main {
+	padding: 20px;
+	width: auto;
+	background-color: #282B2D;
+}
+.left {
+	width: 160px;
+	float: left;
+	border: 1px solid #CCC;
+	padding: 20px;
+}
+.right {
+	width: 80px;
+	float: right;
+	border: 1px solid #CCC;
+}
+.center {
+	width: auto;
+	margin-left: 220px;
+	margin-right: 140px;
+	text-align: center;
+}
+.left img {
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+.left span {
+	font-size: 16px;
+	color: #FFF;
+	float: right;
+}
+.right {
+	padding: 20px;
+}
+.right img {
+	width: 80px;
+	height: 80px;
+	display: block;
+}
+.pad {
+	padding-bottom: 20px;
+}
+h2,P {
+	color: #FFF;
+}
+
