@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #DEDEDE;
+	font-size: 16px;
+}
+.grey {
+	color: #606569;
+}
+.author {
+	font-size: 14px;
+}
+#top {
+	height: 60px;
+	background-color: #333333;
+}
+#top h1{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	margin: 0;
+	margin-left: 40px;
+}
+#top ul{
+	float: right;
+}
+#top ul li{
+	/*display: inline-block;*/
+	float: left;
+	margin-right: 25px;
+}
+#top ul li a{
+	color: #FFFFFF;
+}
+
+
+.wrap {
+	position: relative;
+}
+/*.content {
+	position: absolute;
+	top: 0;
+	right: 510px;
+}
+.side {
+	background-color: #FFFFFF;
+	float: right;
+	width: 450px;
+	margin-top: 20px;
+
+	这样写会遇到一个问题，absolute会使其脱离标准文档流，之后的footer会到上面来。不会再底部。
+}*/
+
+
+.content {
+	position: relative;
+	top: 0px;
+	right: 510px;
+	margin-left: 510px;
+}
+.side {
+	background-color: #FFFFFF;
+	width: 450px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+.paragraph,.photos {
+	background-color: #FFFFFF;
+	margin: 20px;
+	padding: 20px;
+}
+.photos {
+	overflow: hidden;
+}
+.paragraph p {
+	text-indent: 2em;
+}
+.photos ul {
+	list-style: none;
+}
+.photos ul li {
+	border: 1px solid #CCCCCC;
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	float: left;
+}
+.photos ul li p{
+	text-align: center;
+	margin-top: 0px;
+
+}
+
+table {
+	width: 100%;
+	margin: 0 auto;
+}
+table tr:first-child {
+	text-align: left;
+	background-color: #333333;
+}
+table tr:last-child {
+	background-color: #CCCCCC;
+}
+
+.side {
+	margin-right: 20px;
+	padding: 20px;
+}
+
+.side .left {
+	float: left;
+	width: 40%;
+}
+.side .right {
+	float: right;
+	width: 60%;
+	margin-top: 15px;
+}
+.side .left p {
+	text-align: right;
+}
+.side .right p{
+	color: #969E9B;
+	font-size: 14px;
+}
+.password1 {
+	margin-top: 7px;
+	margin-bottom: 15px;
+}
+#gender {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+#hobby {
+	margin-top: 15px;
+	margin-bottom: 17px;
+}
+.submit {
+	background-color: #3355D0;
+	width: 100%;
+	height: 40px;
+	color: #FFFFFF;
+	border-radius: 10px;
+	border: none;
+	margin-top: 20px;
+}
+
+.footer {
+	height: 70px;
+	line-height: 70px;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 14px;
+}
+
+/*.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+.box-set:after {
+  clear: both;
+}
+.box-set {
+  *zoom: 1;
+}*/
+
+footer {
+    color:#fff;
+    background-color: #333;
+    height:60px;
+    text-align: center;
+    padding: 10px;
+}
