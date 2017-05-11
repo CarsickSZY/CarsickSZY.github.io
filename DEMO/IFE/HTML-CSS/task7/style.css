@@ -1,0 +1,542 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body,.main {
+	height: 100%; 
+}
+body {
+	font-size: 16px;
+	font-family: "宋体";
+	color: #75767a;
+}
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  display: table;
+}
+.clearFix:after {
+  clear: both;
+}
+.clearFix {
+  *zoom: 1;
+}
+.header {
+	width: 100%;
+	height: 59px;
+/*	background-color: #ddd;*/
+	min-width: 960px;
+	-webkit-min-width: 960px;
+	-moz-min-width:960px;
+}
+.header-left {
+/*	background-color: blue;*/
+	width: 160px;
+	height: 33px;
+	margin-left: 60px;
+	padding-top: 13px;
+	float: left;
+}
+.header-left img {
+	margin-bottom: -4px;
+}
+.header-left span {
+	font-size: 32px;
+	height: 33px;
+	line-height: 33px;
+}
+
+.header-right ul {
+	margin-right: 20px;
+}
+.header-right ul li{
+	float: right;
+	list-style: none;
+	height: 56px;
+	line-height: 56px;
+}
+.header-right ul li a {
+	color: #75767a;
+	text-decoration: none;
+	padding: 0 17px;
+}
+.header-right ul li .login {
+	color: #e8504f;
+}
+.header-right ul li:hover {
+	border-bottom: 3px solid #e74e48;
+	/*background-color: yellow;*/
+}
+/*头部结束*/
+
+/*主内容main开始*/
+/*第一部分part1*/
+
+.part1 {
+	min-width: 960px;
+	-webkit-min-width: 960px;
+	-moz-min-width:960px;
+	width: 100%;
+	height: 80%;	/*需要设置html, body,.main { height: 100%;} height才起作用。container的高度要设置成100%则前面一个元素要设置一个高度，所以我们追溯到html标签，给html标签定义高度为100%，这样就可以了，chrome中实测。*/
+	background-image: url(111.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.part1-words {
+	color: #ffffff;
+	padding: 230px 0 0 200px;
+}
+.part1-words .part1-e {
+	font-size: 45px;
+	font-weight: bold;
+	height: 80px;
+	line-height: 80px;
+}
+.part1-words .part1-c {
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+.part1 button {
+	position: absolute;
+	top: 415px;
+	left: 200px;
+	width: 15%;
+	height: 10%;
+	background-color: #e8504f;
+	border: none;
+	color: #ffffff;
+	font-size: 30px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+/*第一部分结束*/
+
+/*第二部分开始*/
+/*.part2 .circle li {
+	float: left;
+	list-style: none;
+	width: 240px;
+	text-align: center;
+}*/
+.box {
+	display: flex;
+}
+.item {
+/*	background-color: #e88024;*/
+	width: 1000px;
+	min-width: 240px;
+	height: 134px;
+	text-align: center;
+}
+.item img {
+	margin-top: 43px;
+}
+.item1 {
+	font-size: 14px;
+	width: 24.9%;
+	text-align: center;
+	/*background-color: yellow;*/
+	height: 64px;
+	line-height: 32px;
+	float: left;
+}
+.box1 .bg {	
+	/*background: url("shu.png") no-repeat right top;*/
+	border-right: 1px solid #999999;
+}
+/*第二部分结束*/
+
+/*第三部分开始*/
+.part3 {
+	width: 100%;
+	min-width: 960px;
+	-webkit-min-width: 960px;
+	-moz-min-width: 960px;
+	height: 40%;
+	background-color: #ededed;
+	margin-top: 65px;
+	text-align: center;
+}
+.part3 img {
+	width: 90px;
+	height: 90px;
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+.part3 p {
+	font-size: 50px;
+	color: #a2a2a2;
+}
+.part4 {
+	width: 100%;
+	min-width: 960px;
+	height: 40%;
+	background-image: url(222.jpg);
+	background-size: 100% 100%;
+	/*padding-right: 15%;
+	padding-left: 15%;*/
+}
+.part4-top {
+	text-align: center;
+	/*background-color: #ddd;*/
+	height: 50%;
+}
+.part4-top p {
+	padding-top: 40px;
+	color: #ffffff;
+}
+.part4-top  .w1 {
+	font-size: 22px;
+}
+.part4-top  img {
+	width: 50px;
+	margin-bottom: -30px;
+}
+.part4-top  .w2 {
+	font-size: 14px;
+}
+.box2 {
+	width: 70%;
+	height: 50%;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+/*.item2 {	
+	float: left;
+}*/
+.item2 select {
+	width: 21%;
+	height: 40px;
+	color: #a2a2a2;
+	background-color: #ffffff;
+	border: none;
+	margin: 0 2%;
+	float: left;
+}
+.box2 button {
+	width: 21%;
+	height: 40px;
+	background-color: #bf4e48;
+	color: #ffffff;
+	border: none;
+	margin: 0 2%;
+	float: left;
+}
+
+
+/*part5开始 中间画框部分*/
+.part5 {
+	width: 100%;
+	min-width: 960px;
+	-webkit-min-width: 960px;
+	-moz-min-width: 960px;
+	display: flex;
+	margin-top: 80px;
+	margin-bottom: 80px;
+/*	margin-top: 80px;*/
+	/*display: flex;*/
+	/*padding: 100px 200px;*/
+	/*padding-left: 200px;
+	padding-right: 200px;*/
+}
+/*.part5-wraper {
+	display: flex;
+}*/
+.part5 .item5 {
+	width: 800px;
+	height: 400px;
+	text-align: center;
+}
+.part5 .item5 img {
+	width: 202px;
+	height: 312px;
+	
+	border-bottom: 0;
+	padding: 15px;
+}
+/*.part5 .dao {
+	width: 800px;
+	height: 400px;
+	text-align: center;
+}*/
+.part5 .dao img {
+	width: 180px;
+	height: 240px;
+	border: 1px solid #dadada;
+	padding: 46px 26px;
+}
+.part5 .p {
+	color: #000000;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+.part5 .item5 span {
+	font-size: 13px;
+	padding-top: 8px;
+}
+.part5 .dao-p1 {
+	font-size: 23px;
+	color: #000000;
+	letter-spacing: 20px;
+	text-align: center;
+	font-weight: bold;
+	
+}
+.part5 .dao-p2 {
+	font-size: 13px;
+	color: #75767a;
+	padding-bottom: 10px;
+	padding-top: 8px;
+}
+
+
+/*part6 开始了*/
+.part6 {
+	height: 568px;
+}
+.part6-left {
+	width: 66%;
+	height: 568px;
+	background-image: url(5.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	float: left;
+	color: #ffffff;
+	font-size: 140px;
+	text-align: center;
+}
+.part6-left P {
+	margin-top: 200px;
+}
+.part6-right {
+	width: 34%;
+	height: 568px;
+	float: right;
+}
+.part6-right h3 {
+	color: #000000;
+	text-align: center;
+	padding: 160px 0 20px 0;
+}
+.part6-right h3 span {
+	color: #ea4f4d;
+}
+.part6-right p {
+	font-size: 14px;
+	line-height: 30px;
+	padding-left: 70px;
+	padding-right: 70px;
+	text-indent: 2em;
+}
+.part6-right button {
+	width: 25%;
+	height: 40px;
+	border: 1px solid #ea4f4d;
+	color: #ea4f4d;
+	background-color: #ffffff;	
+}
+.part6-button {
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+/*part7开始*/
+.part7 {
+	/*width: 100%;*/
+	height: 60%;
+	font-size: 25px;
+	text-align: center;
+	line-height: 40px;
+}
+.part7 img {
+	width: 7%;
+}
+.part7-p {
+	margin-top: 25%;
+}
+.part7-left {
+	color: #ffffff;
+}
+.part7-middle {
+	color: #000000;
+}
+.part7-left {
+	width: 33%;
+	height: 100%;
+	background-color: #e8504f;
+	float: left;
+}
+.part7-middle {
+	background-color: #ffffff;
+	width: 33%;
+	height: 100%;
+	float: left;
+} 
+.part7-right {
+	background-image: url(5.jpg);
+	background-size: 100% 100%;
+	width: 33%;
+	height: 100%;
+	float: left;
+} 
+.part7 button{
+	width: 30%;
+	height: 40px;
+}
+.part7-left-button button {
+	background-color: #e8504f;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.part7-middle-button button {
+	background-color: #ffffff;
+	color: #e8504f;
+	border: 1px solid #e8504f;
+}
+.part7-right {
+	position: relative;
+}
+.part7-right img {
+	position: absolute;
+	top: 45%;
+	left: -10px;
+}
+.part8 {
+	width:100%;
+	min-width: 960px;
+	-webkit-min-width: 960px;
+	-moz-min-width: 960px;
+	height: 115px;
+	text-align: center;
+	margin: 8% 0;
+}
+.part8 img {
+	width: 45px;
+	margin: 5px 0;
+}
+.part8-p2 {
+	line-height: 20px;
+	font-size: 14px;
+}
+.part8-p1 {
+	padding-top: 5px; 
+	font-size: 21px;
+	color: #000000;
+}
+
+
+/*part9开始了*/
+.part9 {
+	width: 100%;
+	min-width: 960px;
+	height: 285px;
+}
+.part9-left {
+	width: 25%;
+	margin-left: 10%;
+	margin-right: 5%;
+	height: 285px;
+	float: left;
+	overflow: hidden;
+}
+.part9-left h3 {
+	color: #000000;
+	margin-bottom: 10px;
+}
+.part9-left p {
+	font-size: 14px;
+	line-height: 20px;
+}
+.part9-right {
+	width: 50%;
+	margin-right: 10%;
+	height: 285px;
+	float: right;
+}
+.part9-right span {
+	float: left;
+} 
+.part9-right input {
+	border: none;
+	height: 40px;
+	outline: none;
+	float: left;
+}
+.form {
+	background-color: #ededef;
+	width: 210px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+.form1 input {
+	width: 137px;
+	background-color: #ededef;
+}
+.form input {
+	background-color: #ededef;
+}
+.form1 {
+	background-color: #ededef;
+	width: 210px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+.subl{float: left;}
+.subr{float: left;margin-left: 27px;}
+.area textarea{
+	width: 100%;
+	height: 120px;
+	background-color: #ededef;
+	color: #75767a;
+	font-size: 16px;
+	outline: none;
+	border: none;
+}
+.btn {
+	width: 100%
+	height: 40px;
+	margin-top: 15px;
+}
+.btn button {
+	width: 100%;
+	height: 40px;
+	background-color: #ededef;
+	border: none;
+	font-size: 16px;
+}
+/*主体部分到此结束*/
+
+/*底部*/
+.footer {
+	width: 100%;
+	min-width: 960px;
+	-webkit-min-width: 960px;
+	-moz -min-width: 960px;
+	height: 40%;
+	background-color: #33363f;
+	margin-top: 166px;
+	text-align: center;
+}
+.footer P {
+	color: #ffffff;
+	font-size: 26px;
+	font-weight: bold;
+	padding-top: 115px;
+	padding-bottom: 20px;
+}
+.footer span {
+	color: #ddd;
+	font-size: 21px;
+	margin: 0 15px;
+	background-color: #00cfff;
+}
+.footer span:hover {
+	background-color: #ff0000;
+	cursor: pointer;
+}
