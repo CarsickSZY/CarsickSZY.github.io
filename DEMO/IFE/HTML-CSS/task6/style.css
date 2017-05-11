@@ -1,0 +1,397 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #DDD;
+}
+.container {
+	width: 892px;
+	height: 1386px;
+	background-color: #DDD;
+	margin: 0 auto;
+	padding: 0 44px;
+}
+
+/*头部开始*/
+.header {
+	height: 61px;
+	font-family: "黑体";
+	font-size: 12px;
+	border-bottom: 2px solid #938e8c;
+	overflow: hidden;
+}
+
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  display: table;
+}
+.clearFix:after {
+  clear: both;
+}
+.clearFix {
+  *zoom: 1;
+}
+.header .header-left {
+	background-color: #D55D5C;
+	float: left;
+	height: 61px;
+	width: 110px;
+	text-align: center;
+	line-height: 61px;
+	color: #FFFFFF;
+}
+.header .header-left p {
+	margin-top: 23px;
+}
+.header .header-right {
+	float: right;
+	height: 61px;
+	line-height: 61px;
+	color: #D45D59;
+}
+.header .header-right p {
+	margin-top: 23px;
+}/*头部结束*/
+
+/*第一部分 part1*/
+.part1 {
+	margin-top: 35px;
+}
+.part1-left {
+	position: relative;
+	width: 641px;
+}
+.part1-left .green,
+.part1-left .red {
+	opacity: 0.5;
+	width: 191px;
+	height: 301px;
+}
+.part1-left .green {
+	background-color: #2e5341;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.part1-left .red {
+	background-color: #BA7A78;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.part1-left img {
+	float: left;
+	width: 641px;
+	height: 301px;
+}
+.part1-right {
+	float: right;
+	width: 203px;
+	height: 299px;
+	border-top: 2px solid #cc8091;
+	position: relative;
+}
+
+.part1-right .AT {
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #000000;
+	text-decoration: underline;
+	line-height: 40px;
+	font-variant: small-caps;   	 /*设置小型大写字母的字体显示文本，这意味着所有的小写字母均会被转换为大写，但是所有使用小型大写字体的字母与其余文本相比，其字体尺寸更小*/
+	text-transform: capitalize;		/*使文本中单词以大写字母开头*/
+}
+.part1-right .small-at {
+	font-family: "楷体";
+	font-size: 12px;
+	line-height: 10px;
+}
+.part1-right .italic {
+	margin-top: 25px;
+	height: 116px;
+	line-height: 116px;
+	font-family: "微软雅黑";
+	font-size: 116px;
+	color: #75b86b;
+	font-style: italic;
+}
+.part1-right .AT-1 {
+	width: 80px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 55px;
+	color: #cc8091;
+	font-family: "微软雅黑";
+}
+.part1-right .AT-2 {
+	font-family: "微软雅黑";
+	color: #cc8091;
+	width: 100px;
+	position: absolute;
+	bottom: 5px;
+	left: 85px;
+}
+.part1-right .AT-2 .AT-2-1 {
+	font-size: 21px;
+}
+.part1-right .AT-2 .AT-2-2 {
+	font-size: 12px;
+}
+
+.part2 {
+	margin-top: 35px;
+	width: 641px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #231815;
+	line-height: 16px;
+}
+.part2 p {
+	opacity: 0.7
+}
+.part2 .part2-1 {
+	width: 230px;
+	float: left;
+	margin-right: 33px;
+	letter-spacing: 2px;
+}
+.part2 .part2-2 {
+	width: 210px;
+	float: left;
+	margin-right: 33px;
+	letter-spacing: 2px;
+}
+.part2 .part2-3 {
+	width: 135px;
+	float: left;
+	letter-spacing: 2px;
+}
+.part2 .part2-1 h3{
+	color: #559269;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+.part2 .part2-2 h3{
+	color: #d2994f;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+.part2 .part2-3 h3{
+	color: #cc7680;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+.part2 .part2-3 .percent {
+	margin-top: 20px;
+	line-height: 16px;
+	letter-spacing: 0;
+}
+.part2 .part2-3 .percent span {
+	font-style: italic;
+	color: #cd4a48;
+}
+
+.part3 {
+	margin-top: 35px;
+}
+.part3-left {
+	width: 415px;
+	float: left;
+}
+.part3-right {
+	width: 458px;
+	float: right;
+}
+.part3-left-1 {
+	border-bottom: 2px solid #11456b;
+}
+.part3-left-1 .the {
+	font-size: 72px;
+	color: #f5e327;
+	font-family: "黑体";
+	font-weight: bold;
+	font-style: italic;
+	margin-right: 16px;
+}
+.part3-left-1 .tec {
+	font-size: 42px;
+	color: #11456b;
+	font-family: "黑体";
+	font-weight: bold;
+	line-height: 16px;
+}
+.part3-left-1 p {
+	font-size: 33px;
+	color: #11456b;
+	font-weight: bold;
+	font-family: "黑体";
+	margin: 5px 0;
+}
+.part3-left-2 {
+	margin-top: 10px;
+}
+.part3-left-2 span {
+	font-family: "微软雅黑";
+	font-size: 70px;
+	color: #f5e327;
+	float: left;
+}
+.part3-left-2 p {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #767777;
+	line-height: 20px;
+	text-indent: 2em;
+	letter-spacing: 2px;
+}
+.part3-left-2 img {
+	width: 165px;
+	height: 220px;
+	float: right;
+	padding: 10px 0 10px 10px;
+}
+
+.part3-right-1 {
+	width: 458px;
+	height: 275px;
+	background-image: url(1.jpg);
+	background-size: 458px 275px;
+	position: relative;
+}
+.part3-right-1 .op {
+	width: 458px;
+	height: 61px;
+	position: absolute;
+	bottom: 0;
+	opacity: 0.5;
+	background-color: #000;
+}
+.part3-right-1 .op .font span {
+	color: #ffffff;
+	font-size: 26px;
+	font-family: "微软雅黑";
+	line-height: 44px;
+}
+.part3-right-1 .op .font i {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #72b16a;
+	letter-spacing: 140%;
+}
+.part3-right-1 .op .font {
+	border-left: 3px solid #72b16a;
+	height: 44px;
+	margin-left: 38px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.part3-right-2 {
+	width: 458px;
+	background-color: rgb(234,234,205);
+	margin-top: 20px;
+}
+.top {
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 20px;
+	/*background-color: yellow;*/
+}
+.top ul {
+	list-style-type: square;
+}
+.top ul li {
+	padding-bottom: 20px;
+} 
+.a {
+	font-size: 16px;
+	font-family: "宋体";
+	color: #5a5b5b;
+} 
+.b{
+	float: right;
+	font-size: 12px;
+	font-style: italic;
+	font-family: "宋体";
+	color: #5a5b5b;
+}
+.bottom {
+	width: 459px;
+	/*background: green;*/
+}
+.bottom-left {
+	width: 250px;
+	height: 150px;
+	background-color: rgb(201,71,74);
+	padding: 5px;
+	float: left;
+}
+.zero {
+	color: #ffffff;
+	font-size: 110px;
+	font-family: "微软雅黑";
+	/*background-color: black;*/
+	height: 86px;
+	line-height: 86px;
+	border-right: 2px solid #ffffff;	
+	width: 60px;
+	text-align: center;
+	margin-top: 32px;
+	display: inline-block;
+	float: left;
+}
+.words {
+	width: 180px;
+	float: left;
+	/*color: #ffffff;*/
+	font-family: "黑体";
+	margin-top: 32px;
+	/*background-color: blue;*/
+	padding-left: 8px;
+	color: #ffffff;
+}
+.xieti {
+	font-size: 21px;
+	font-style: italic;
+}
+.xiao {
+	font-size: 12px;
+	margin: 6px;
+}
+
+.bottom-right {
+	width: 188px;
+	padding: 5px 0 5px 5px;
+	/*background-color: blue;*/
+	float: right;
+}
+.bottom-right p {
+	font-style: italic;
+	font-size: 14px;
+	font-family: "黑体";
+	color: #5a5b5b;
+	margin: 8px 0;
+}
+/*怎么让不同大小的字在同一行显示呢？*/
+.bottom-right span {
+	font-size: 72px;
+	color: #d45d5c;
+}
+.footer {
+	width: 892px;
+	border-top: 1px solid #938e8c;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	text-align: right;
+	color: #d34d5c;
+	font-family: "黑体";
+	font-size: 12px;
+}
