@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>少数派-高质量应用推荐媒体</title>
+    <script type="text/javascript" src="jquery1.42.min.js"></script>
+    <script type="text/javascript" src="jquery.SuperSlide.2.1.1.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -25,8 +27,20 @@
         </div>
     </div>
     <!-- 大图片 -->
-    <div id="photo">
+    <!-- <div id="photo">
       <img src="photo1.jpg">
+    </div> -->
+    <div id="slideBox" class="slideBox">
+      <div class="hd">
+        <ul><li>1</li><li>2</li><li>3</li></ul>
+      </div>
+      <div class="bd">
+        <ul>
+          <li><a href="https://www.apple.com/cn/ipad-pro/" target="_blank"><img src="photo2.jpg" /></a></li>
+          <li><a href="https://www.apple.com/cn/macbook-pro/" target="_blank"><img src="photo1.jpg" /></a></li>
+          <li><a href="https://www.apple.com/cn/watchos-preview/" target="_blank"><img src="photo3.jpg" /></a></li>
+        </ul>
+      </div>
     </div>
     <!-- 图片下的小导航 -->
     <div id="small-nav">
@@ -119,5 +133,10 @@
     <div id="last">
       <p id="last-content">Copyright © 2013-2016 少数派 - 高质量的应用推荐媒体 / 版本 V9.0<br>少数派 采用知识共享署名-非商业性使用 4.0 国际许可协议 进行许可。商业性使用请联系 will@sspai.com。<br>深圳市烧麦网络科技有限公司 (粤ICP备09128966号-4）</p>
     </div>
+
+
+    <script type="text/javascript">
+    jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+    </script>
   </body>
 <html>
