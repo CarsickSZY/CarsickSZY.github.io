@@ -1,4 +1,5 @@
 *{margin: 0;padding: 0;font-family: "微软雅黑";list-style: none;}
+body {overflow:-Scroll;overflow-x:hidden;}
 
 /*头部*/
 #red-line{width: 100%;border-top: 3px solid #F22A22;}
@@ -25,7 +26,7 @@
 #text{width: 55px;height: 30px;border: 0;float: left;outline: none;}
 #submit{width: 30px;height: 30px;border: 0;float: left;background-color: #ed160e;outline: none;}
 /*#photo img{width: 100%;height: 350px;margin-top: 20px;}*/
-#photo img{width: 100%;height: 689px;margin-top: 20px;}
+/*#photo img{width: 100%;height: 689px;margin-top: 20px;}*/
 #small-nav{
   width: 900px;
   margin: 0 auto;
