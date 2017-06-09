@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;font-family: "微软雅黑";list-style: none;}
-body {overflow:-Scroll;overflow-x:hidden;}
+body {overflow:-Scroll;overflow-x:hidden;}    /*去掉横向滚动条*/
 
 /*头部*/
 #red-line{width: 100%;border-top: 3px solid #F22A22;}
