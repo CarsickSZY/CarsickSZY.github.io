@@ -153,7 +153,7 @@ body {
 	min-width: 960px;
 	-webkit-min-width: 960px;
 	-moz-min-width: 960px;
-	height: 40%;
+	height: 380px/*40%*/;
 	background-color: #ededed;
 	margin-top: 65px;
 	text-align: center;
@@ -171,7 +171,7 @@ body {
 .part4 {
 	width: 100%;
 	min-width: 960px;
-	height: 40%;
+	height: 380px/*40%*/;
 	background-image: url(222.jpg);
 	background-size: 100% 100%;
 	/*padding-right: 15%;
