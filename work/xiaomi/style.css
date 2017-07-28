@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑"
+}
+#header {
+  width: 100%;
+  height: 40px;
+  background-color: #333333;
+}
+#header-content{
+  width: 1236px;
+  margin: 0 auto;
+  position: relative;
+}
+.header-left{
+  width: 610px;
+  height: 40px;
+  /*background-color: red;*/
+  float: left;
+}
+.header-left ul,.header-right ul{
+  list-style: none;
+}
+.header-left ul li,.header-right ul li{
+  float: left;
+  line-height: 40px;
+}
+.header-left ul li a,.header-right ul li a{
+  color: #B0B0B0;
+  text-decoration: none;
+  font-size: 12px;
+}
+.header-left ul li span,.header-right ul li span{
+  display: inline-block;
+  color: #424242;
+  padding: 0 8px;
+}
+.header-right{
+  width: 160px;
+  height: 40px;
+  float: left;
+  /*background-color: blue;*/
+  margin-left: 330px;
+}
+.shoppingCar{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #424242;
+  padding: 0 20px;
+}
+.shoppingCar .car{
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+/*.shoppingCar .car1{
+  display: none;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-right: 8px;
+}*/
+.shoppingCar .gouwuche{
+  float: left;
+  font-size: 12px;
+  line-height: 40px;
+  color: #B0B0B0;
+}
+.shoppingCar .xuangou{
+  display: none;
+  width: 300px;
+  height: 12px;
+  font-size: 12px;
+  color: #424242;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 41px 0;
+  /*padding: 40px 60px;*/
+  background-color: #FFFFFF;
+  z-index: 3;
+  text-align: center;
+  /*box-shadow: -1px 2px 4px #ddd;*/
+  box-shadow: -1px 2px 4px #DDD;
+  -moz-box-shadow: -1px 2px 4px #DDD;
+  -webkit-box-shadow: -1px 2px 4px #DDD;
+}
+#main{
+  width: 1236px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav-top{
+  position: relative;
+  /*margin: 20px 0;*/
+}
+.nav-top>img {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-right: 190px;
+  margin-top: 20px;
+}
+.nav-top>ul{
+  float: left;
+  margin-right: 61px;
+}
+.nav-top>ul>.nav-mid{
+  color: #33333;
+  list-style: none;
+  float: left;
+  height: 95px;
+  line-height: 95px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.nav-top form{
+  float: left;
+  background-color: #FFFFFF;
+  /*width: 295px;
+  height: 49px;*/
+  margin: 3px 0;
+  border: 1px solid #E0E0E0;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.nav-top form .text{
+  width: 200px;
+  height: 49px;
+  border: 0;
+  float: left;
+  outline: none;
+  color: #757575;
+}
+.nav-top form .submit{
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-left: 1px solid #E0E0E0;
+  float: left;
+  background-image: url(images/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+}
+.xiaomiphoto,.hongmiphoto{
+  background-color: #FFFFFF;
+  cursor: default;
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 95px;
+  /*top:135px;*/
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 2px 8px #DDD;
+  -moz-box-shadow: 0 0 8px #DDD;      /*Firefox浏览器*/
+  -webkit-box-shadow: 0 2px 8px #DDD;  /*Chrome浏览器*/
+  z-index: 3;
+}
+.xiaomiphoto ul,.hongmiphoto ul{
+  width: 1236px;
+  margin: 0 auto;
+  padding-top: 33px;
+}
+.xiaomiphoto ul li,.hongmiphoto ul li {
+  list-style: none;
+  display: inline-block;
+  /*width: 160px;*/
+  padding-right: 21px;
+  padding-left: 21px;
+}
+.xiaomiphoto ul li img,.hongmiphoto ul li img{
+  width: 160px;
+  height: 110px;
+}
+.xiaomiphoto ul li .phone-name,.hongmiphoto ul li .phone-name{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #333333;
+  height: 20px;
+  line-height: 20px;
+  /*background-color: red;*/
+  margin-top: -25px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.xiaomiphoto ul li p,.hongmiphoto ul li p{
+  /*background-color: blue;*/
+  text-align: center;
+  color: #FF6700;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+.nav-big{
+  width: 100%;
+  /*background-color: #E6E6E6;*/
+  position: absolute;
+  top: 95px;
+  left: 0;
+}
+.nav-slide{
+  float: left;
+  opacity: 1.0;
+  z-index: 2;
+  /*-moz-opacity:0.5;    Firefox私有，透明度50%*/
+}
+.nav-slide>ul{
+  width: 210px;
+  background-color: #5F5F5F;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 25px;
+}
+/*.slide-a{
+  background-color: red;
+}*/
+.nav-slide>ul>li{
+  width: 235px;
+  /*margin-right: 30px;*/
+  list-style: none;
+  /*background-position:205px 0px;          这样设置 背景图片不显示了*/
+  /*background-position: right;
+  background-repeat: no-repeat;
+  background-image: url(images/arrow.png);*/    /*图片位于右边*/
+  background: url(images/arrow.png) no-repeat 200px center;  /*位于距左侧200px处，center上下居中：还可以取top等*/
+}
+.nav-slide>ul>li>a{
+  display: block;
+  width: 205px;
+  /*background-color: red;*/
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 13px;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 30px;
+}
+.shoujidianhuaka{
+  display: none;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  /*opacity: 1.0;*/
+  /*width: 796px;
+  height: 458px;*/        /*不用设置宽搞，里面的内容会自动撑开。并且当只有一列的时候也省得再改了。*/
+  position: absolute;
+  top: 0px;
+  left: 235px;
+  border: 1px solid #E0E0E0;
+  box-shadow: 2px 2px 8px #DDD;
+  -webkit-box-shadow: 2px 2px 8px #DDD;
+  -moz-box-shadow: 2px 2px 8px #DDD;
+  z-index: 3;
+}
+
+.shoujidianhuaka ul{
+  float: left;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-left: 20px;
+  margin-right: 9px;
+}
+.shoujidianhuaka ul li{
+  list-style: none;
+  width: 236px;
+  padding: 18px 0;
+  vertical-align:middle;
+}
+.shoujidianhuaka ul li a{
+  text-decoration: none;
+  color: #333333;
+  /*display: inline-block;
+  vertical-align:middle;*/
+}
+.shoujidianhuaka ul li a img{
+  /*display: inline-block;*/
+  width: 60px;
+  height: 40px;
+  vertical-align:middle;        /*img和span都设置，之后文字会垂直居中。不需要block*/
+}
+.shoujidianhuaka ul li a .heyue{
+  width: 40px;
+  height: 40px;
+}
+.shoujidianhuaka ul li a span{
+  /*display: inline-block;*/
+  font-size: 13px;
+  vertical-align:middle;
+  height: 40px;
+  line-height: 40px;
+}
+.shoujidianhuaka ul li input{
+  display: inline-block;
+  background-color: #FFFFFF;
+  width: 64px;
+  height: 26px;
+  float: right;
+  font-size: 13px;
+  color: #FF6700;
+  border: 1px solid #FF6700;
+  margin-top: 4px;
+  /*vertical-align:middle;*/
+}
+.nav-big{
+  /*background-image: url(images/photo4.jpg);*/
+  /*position: relative;*/
+}
+
+/*slide轮播效果*/
+    .slideBox{ z-index: -1;width:1236px; height:459px; overflow:hidden; position:absolute; border:1px solid #ddd;margin: 0 auto;top: 0; left: 0; }
+    .slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:4; }
+    .slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+    .slideBox .hd ul li{list-style: none;float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+    .slideBox .hd ul li.on{ background:#f00; color:#fff; }
+    .slideBox .bd{ position:relative; height:100%; z-index:0;}
+    .slideBox .bd li{ list-style: none;zoom:1; vertical-align:middle; }
+    .slideBox .bd img{ width:1236px; height:459px; display:block;}
+
+    /* 下面是前/后按钮代码，如果不需要删除即可 */
+    .slideBox .prev,
+    .slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(slide-images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+    .slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+    .slideBox .prev:hover,
+    .slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+    .slideBox .prevStop{ display:none;  }
+    .slideBox .nextStop{ display:none;  }
+    .slideBox a{ text-decoration:none; color:#333;  }
+
+.nav-small{
+  /*background-color: #CCC;*/
+  height: 170px;
+  width: 100%;
+  position: absolute;
+  top:570px;
+  left: 0;
+}
+#nav-small-1{
+  /*cursor: pointer;*/
+  width: 235px;
+  height: 170px;
+  background-color: #5F5750;
+  float: left;
+}
+/*#nav-small-1 ul{
+  background-color: #5F5750;
+}*/
+#nav-small-1 ul li img{
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  /*margin-bottom: 5px;*/
+}
+#nav-small-1 ul li a span{
+  display: inline-block;
+  text-align: center;
+  width: 73px;
+  height: 20px;
+  line-height: 20px;
+  color: #CFCDCB;
+}
+#nav-small-1 ul li{
+  list-style: none;
+  float: left;
+  font-size: 12px;
+  display: inline-block;
+  width: 76px;
+  height: 63px;
+  border: 1px solid #665E57;
+  padding-top: 20px;
+}
+.nav-small-div{
+  float: left;
+  width: 316px;
+  height: 170px;
+  margin-left: 17px;
+}
+.nav-small-div img{
+  width: 318px;
+  height: 170px;
+}
